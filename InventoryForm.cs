@@ -12,7 +12,10 @@ namespace _03LabExer_Inventory_BautistaM
 {
     public partial class frmAddProduct : Form
     {
-
+        //STEP 5
+        private string _ProductName, _Category, _MfgDate, _ExpDate, _Description;
+        private int _Quantity;
+        private double _SellPrice;
 
         public frmAddProduct()
         {
