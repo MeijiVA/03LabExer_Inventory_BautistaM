@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -19,6 +20,8 @@ namespace _03LabExer_Inventory_BautistaM
 
         public frmAddProduct()
         {
+            //STEP 9
+            BindingSource showProductList = new BindingSource();
             InitializeComponent();
         }
 
@@ -33,6 +36,30 @@ namespace _03LabExer_Inventory_BautistaM
                 cbCategory.Items.Add(list);
             }
         
-        }//form add product load
-    }
-}
+        }//form add product load'
+
+        //STEP 8
+        public string Product_Name(string name)
+        {
+            if (!Regex.IsMatch(name, @"^[a-zA-Z]+$"))
+                //Exception here
+                return name;
+        }
+        public int Quantity(string qty)
+        {
+            if (!Regex.IsMatch(qty, @"^[0-9]"))
+                //Exception here
+                return Convert.ToInt32(qty);
+        }
+        public double SellingPrice(string price)
+        {
+            if (!Regex.IsMatch(price.ToString(), @"^(\d*\.)?\d+$"))
+                //Exception here
+                return Convert.ToDouble(price);
+        }
+
+
+
+
+    }//partial class
+}//namespace
