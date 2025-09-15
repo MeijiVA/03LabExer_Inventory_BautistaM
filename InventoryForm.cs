@@ -22,9 +22,17 @@ namespace _03LabExer_Inventory_BautistaM
             InitializeComponent();
         }
 
+
         private void frmAddProduct_Load(object sender, EventArgs e)
         {
+            //STEP 6
+            string[] ListofProductCategory = { "Beverages", "Bread/Bakery", "Canned/Jarrd Goods", "Dairy", "Frozen Goods", "Meat", "Personal Care", "Other" };
 
-        }
+            //STEP 7
+            foreach (String list in ListofProductCategory) {
+                cbCategory.Items.Add(in);
+            }
+        
+        }//form add product load
     }
 }
