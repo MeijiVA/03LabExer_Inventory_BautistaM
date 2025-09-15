@@ -111,7 +111,7 @@ namespace _03LabExer_Inventory_BautistaM
         }
         public double SellingPrice(string price)
         {
-            if (!Regex.IsMatch(price.ToString(), @"^(\d*\.)?\d+$"))a
+            if (!Regex.IsMatch(price.ToString(), @"^(\d*\.)?\d+$"))
                 //Exception here
                 throw new CurrencyFormatException("Invalid Currency Format");
             return Convert.ToDouble(price);
