@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace _03LabExer_Inventory_BautistaM
 {
-    public partial class Form1 : Form
+    public partial class frmAddProduct : Form
     {
-        public Form1()
+
+
+        public frmAddProduct()
         {
             InitializeComponent();
+        }
+
+        private void frmAddProduct_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
