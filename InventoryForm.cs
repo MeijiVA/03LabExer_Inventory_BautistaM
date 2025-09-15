@@ -30,7 +30,7 @@ namespace _03LabExer_Inventory_BautistaM
 
             //STEP 7
             foreach (String list in ListofProductCategory) {
-                cbCategory.Items.Add(in);
+                cbCategory.Items.Add(list);
             }
         
         }//form add product load
