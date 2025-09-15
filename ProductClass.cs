@@ -25,8 +25,6 @@ namespace _03LabExer_Inventory_BautistaM
             this._Description = Description;
         }
 
-
-        //STEP 5
         public string productName
         {
             get
